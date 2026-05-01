@@ -36,7 +36,7 @@ body {
 
 .logo {
   width: 120px;
-  border-radius: 25px;
+   border-radius: 25px;
   box-shadow: 0 30px 80px rgba(0,0,0,0.6);
   transition: 0.4s;
   margin-bottom: 30px;
@@ -70,21 +70,6 @@ p {
 }
 
 .stores img:hover {
-  transform: scale(1.05);
-}
-.store-buttons {
-  display: flex;
-  gap: 16px;
-  margin-top: 25px;
-}
-
-.store-buttons img {
-  height: 50px;
-  transition: 0.3s;
-  border-radius: 12px;
-}
-
-.store-buttons img:hover {
   transform: scale(1.05);
 }
 
