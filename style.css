@@ -164,11 +164,7 @@ p {
   }
 
  .logo img {
-  width: 200px;
-  border-radius: 18px;
-  padding: 8px;
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-}
+    width: 105px; /* 👈 كان 50، كبرناه */
+    padding: 6px;
+  }
 }
