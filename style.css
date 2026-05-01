@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Cairo', sans-serif;
+  font-family: Arial;
   background: linear-gradient(135deg, #020617, #0f172a);
   color: white;
 }
@@ -15,57 +15,54 @@ body {
 /* LOGO */
 .logo {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 30px;
+  left: 30px;
 }
 
 .logo img {
-  width: 120px;
+  width: 100px;
   border-radius: 20px;
-  background: rgba(255,255,255,0.05);
-  padding: 10px;
 }
 
 /* LAYOUT */
-.hero-container {
+.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 /* TEXT */
-.hero-text {
+.text {
   max-width: 500px;
 }
 
-.hero-text h1 {
-  font-size: 48px;
+.text h1 {
+  font-size: 42px;
   line-height: 1.4;
 }
 
-.hero-text span {
+.text span {
   color: gold;
 }
 
-.hero-text p {
+.text p {
   color: #ccc;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
-/* BUTTONS */
-.store-buttons {
+/* STORE BUTTONS */
+.stores {
   display: flex;
   gap: 15px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
-.store-buttons img {
+.stores img {
   height: 50px;
-  cursor: pointer;
 }
 
 /* IMAGE */
-.hero-image img {
-  width: 420px;
-  border-radius: 30px;
+.image img {
+  width: 400px;
+  border-radius: 25px;
 }
