@@ -1,72 +1,45 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
 body {
-  background: #0f172a;
+  margin: 0;
+  font-family: Arial;
+  background: #0b0f1a;
   color: white;
-  text-align: center;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
+  padding: 20px;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.btn {
-  background: #6366f1;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
+  height: 40px;
 }
 
 .hero {
-  padding: 100px 20px;
-}
-
-.hero h2 {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.features {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 50px 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
 }
 
-.card {
-  background: #1e293b;
-  padding: 20px;
-  border-radius: 12px;
-  width: 200px;
+.hero-text {
+  max-width: 500px;
 }
 
-.contact {
-  padding: 80px 20px;
+.hero-text h1 {
+  font-size: 40px;
+  line-height: 1.5;
 }
 
-.contact input {
-  padding: 10px;
-  width: 250px;
+.hero-text p {
+  color: #ccc;
   margin-top: 20px;
-  border-radius: 8px;
-  border: none;
 }
 
-footer {
-  padding: 20px;
-  background: #020617;
+.stores img {
+  height: 50px;
+  margin: 10px;
+}
+
+.hero-image img {
+  width: 400px;
+  border-radius: 20px;
 }
