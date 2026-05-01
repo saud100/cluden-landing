@@ -77,6 +77,21 @@ p {
 .image {
   position: relative;
 }
+.store-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 25px;
+}
+
+.store-buttons img {
+  height: 50px;
+  transition: 0.3s;
+  border-radius: 12px;
+}
+
+.store-buttons img:hover {
+  transform: scale(1.05);
+}
 
 .image img {
   width: 460px;
