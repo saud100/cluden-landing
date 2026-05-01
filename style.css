@@ -1,106 +1,97 @@
-/* RESET */
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY */
+/* ================= BODY ================= */
 body {
   font-family: 'El Messiri', sans-serif;
   background: linear-gradient(135deg, #020617, #0f172a);
   color: white;
   direction: rtl;
 }
-h1 {
-  font-family: 'El Messiri', sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
 
-p {
-  font-weight: 300;
-  opacity: 0.85;
-  line-height: 1.8;
-}
-
-/* HERO SECTION */
+/* ================= HERO ================= */
 .hero {
   min-height: 100vh;
-  padding: 80px 60px;
+  display: flex;
+  align-items: center;
   position: relative;
-  overflow: hidden;
 }
 
-/* LOGO */
-.logo {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-}
-
-.logo img {
-  width: 90px;
-  border-radius: 20px;
-  background: rgba(255,255,255,0.05);
-  padding: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-}
-
-/* LAYOUT */
+/* ================= CONTAINER ================= */
 .container {
+  width: 90%;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  gap: 50px;
 }
 
-/* TEXT SIDE */
+/* ================= TEXT ================= */
 .text {
   max-width: 520px;
 }
 
-.text h1 {
+h1 {
   font-size: 48px;
   line-height: 1.5;
   font-weight: 700;
 }
 
-.text span {
+h1 span {
   color: #facc15; /* ذهبي */
 }
 
-.text p {
+p {
   margin-top: 15px;
-  color: #cbd5f5;
-  font-size: 16px;
+  font-size: 18px;
+  opacity: 0.85;
 }
 
-/* STORE BUTTONS */
-.stores {
+/* ================= BUTTONS ================= */
+.store-buttons {
   display: flex;
-  gap: 15px;
+  gap: 12px;
   margin-top: 25px;
 }
 
-.stores img {
-  height: 50px;
+.store-buttons img {
+  height: 48px;
   transition: 0.3s;
-  cursor: pointer;
 }
 
-.stores img:hover {
-  transform: scale(1.08);
+.store-buttons img:hover {
+  transform: scale(1.05);
 }
 
-/* IMAGE */
+/* ================= IMAGE ================= */
 .image img {
   width: 420px;
-  border-radius: 30px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+  border-radius: 25px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
 }
 
-/* RESPONSIVE */
+/* ================= LOGO ================= */
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.logo img {
+  width: 70px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.05);
+  padding: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
   .container {
     flex-direction: column;
@@ -108,10 +99,16 @@ p {
   }
 
   .image img {
-    width: 100%;
+    width: 300px;
+    margin-top: 30px;
+  }
+
+  h1 {
+    font-size: 32px;
   }
 
   .logo {
-    right: 20px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
