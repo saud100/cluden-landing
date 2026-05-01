@@ -1,105 +1,71 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: radial-gradient(circle at top right, #1a1f3a, #050816);
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(135deg, #020617, #0f172a);
   color: white;
-  overflow-x: hidden;
 }
 
-/* HERO */
+/* SECTION */
 .hero {
+  min-height: 100vh;
+  padding: 60px;
+  position: relative;
+}
+
+/* LOGO */
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo img {
+  width: 120px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  padding: 10px;
+}
+
+/* LAYOUT */
+.hero-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 120px;
-  min-height: 100vh;
-  position: relative;
-}
-
-/* GOLD GLOW */
-.hero::before {
-  content: "";
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  background: rgba(255, 215, 0, 0.08);
-  filter: blur(120px);
-  top: -100px;
-  right: -100px;
 }
 
 /* TEXT */
-.text {
-  max-width: 520px;
-  z-index: 2;
+.hero-text {
+  max-width: 500px;
 }
 
-.logo {
-  width: 120px;
-   border-radius: 25px;
-  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
-  transition: 0.4s;
-  margin-bottom: 30px;
-}
-
-h1 {
+.hero-text h1 {
   font-size: 48px;
-  line-height: 1.5;
-  font-weight: 700;
+  line-height: 1.4;
 }
 
-h1 span {
-  color: #d4af37;
+.hero-text span {
+  color: gold;
 }
 
-p {
-  color: #aaa;
-  margin: 25px 0;
-  font-size: 18px;
+.hero-text p {
+  color: #ccc;
+  margin-top: 15px;
 }
 
-/* STORE BUTTONS */
-.stores {
-  display: flex;
-  gap: 15px;
-}
-
-.stores img {
-  height: 50px;
-  transition: 0.3s;
-}
-
-.stores img:hover {
-  transform: scale(1.05);
-}
-
-/* IMAGE */
-.image {
-  position: relative;
-}
+/* BUTTONS */
 .store-buttons {
   display: flex;
-  gap: 16px;
+  gap: 15px;
   margin-top: 25px;
 }
 
 .store-buttons img {
   height: 50px;
-  transition: 0.3s;
-  border-radius: 12px;
+  cursor: pointer;
 }
 
-.store-buttons img:hover {
-  transform: scale(1.05);
-}
-
-.image img {
-  width: 460px;
-  border-radius: 25px;
-  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
-  transition: 0.4s;
-}
-
-.image img:hover {
-  transform: translateY(-10px);
+/* IMAGE */
+.hero-image img {
+  width: 420px;
+  border-radius: 30px;
 }
