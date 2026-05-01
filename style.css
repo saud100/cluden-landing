@@ -241,3 +241,59 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+/* ================= SCREENS PAGE ================= */
+
+.header {
+  padding: 20px;
+}
+
+.back {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.screens {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.screens h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.screens p {
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+
+.screens-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+.screens-grid img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+.screens-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* 📱 موبايل */
+@media (max-width: 768px) {
+  .screens-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
