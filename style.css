@@ -37,6 +37,8 @@ body {
 .logo {
   width: 120px;
   border-radius: 25px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+  transition: 0.4s;
   margin-bottom: 30px;
 }
 
