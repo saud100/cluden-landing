@@ -79,9 +79,9 @@ p {
 /* ================= LOGO ================= */
 .logo {
   position: absolute;
-  top: 25px;
-  left: 25px; /* لأنه RTL يصير يسار */
-  z-index: 10;
+  top: 30px;
+  right: 30px; /* عربي = يمين */
+  z-index: 999;
 }
 
 .logo img {
