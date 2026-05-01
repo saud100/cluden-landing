@@ -1,45 +1,71 @@
 body {
   margin: 0;
-  font-family: Arial;
-  background: #0b0f1a;
+  font-family: 'Segoe UI', sans-serif;
+  background: #050816;
   color: white;
 }
 
-.header {
-  padding: 20px;
-}
-
-.logo {
-  height: 40px;
-}
-
+/* HERO */
 .hero {
+  position: relative;
+  height: 100vh;
+  background: radial-gradient(circle at top right, #1a1f3a, #050816);
+  overflow: hidden;
+}
+
+/* Overlay glow */
+.overlay {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: rgba(255, 215, 0, 0.08);
+  filter: blur(120px);
+  top: -100px;
+  right: -100px;
+}
+
+/* Layout */
+.content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px;
+  padding: 80px;
+  height: 100%;
 }
 
-.hero-text {
+/* Text */
+.text {
   max-width: 500px;
 }
 
-.hero-text h1 {
-  font-size: 40px;
-  line-height: 1.5;
+.logo {
+  height: 50px;
+  margin-bottom: 30px;
 }
 
-.hero-text p {
-  color: #ccc;
-  margin-top: 20px;
+h1 {
+  font-size: 42px;
+  line-height: 1.6;
 }
 
+h1 span {
+  color: gold;
+}
+
+p {
+  color: #aaa;
+  margin: 20px 0;
+}
+
+/* Buttons */
 .stores img {
   height: 50px;
-  margin: 10px;
+  margin-left: 10px;
 }
 
-.hero-image img {
-  width: 400px;
+/* Image */
+.image img {
+  width: 450px;
   border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
 }
