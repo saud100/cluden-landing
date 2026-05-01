@@ -78,10 +78,13 @@ p {
 
 /* ================= LOGO ================= */
 .logo {
-  position: absolute;
-  top: 30px;
-  right: 30px; /* عربي = يمين */
-  z-index: 999;
+  position: absolute !important;
+  top: 20px !important;
+  right: 20px !important;
+  left: auto !important;
+  transform: none !important;
+  margin: 0 !important;
+  z-index: 9999;
 }
 
 .logo img {
