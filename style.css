@@ -19,7 +19,6 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 /* ================= CONTAINER ================= */
@@ -114,5 +113,57 @@ p {
   .logo {
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .text {
+    order: 1;
+  }
+
+  .image {
+    order: 2;
+    margin-top: 30px;
+  }
+
+  .image img {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .text h1 {
+    font-size: 28px;
+    line-height: 1.6;
+  }
+
+  .text p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .store-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .store-buttons img {
+    width: 140px;
+  }
+
+  .logo {
+    top: 15px;
+    right: 15px;
+  }
+
+  .logo img {
+    width: 50px;
   }
 }
